@@ -1,0 +1,91 @@
+
+body {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/078277ed-5380-4deb-b166-997beba79634/dh3kqsw-8f06c0db-90b4-4959-8c42-2de785d0f593.png/v1/fill/w_607,h_1317,q_70,strp/alien__romulus_mobile_wallpaper_by_crillyboy25_dh3kqsw-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjM0MiIsInBhdGgiOiJcL2ZcLzA3ODI3N2VkLTUzODAtNGRlYi1iMTY2LTk5N2JlYmE3OTYzNFwvZGgza3Fzdy04ZjA2YzBkYi05MGI0LTQ5NTktOGM0Mi0yZGU3ODVkMGY1OTMucG5nIiwid2lkdGgiOiI8PTEwODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.N4-tViuZvxws_FkHbnL4J_uS7KUoQepAOuFfvVEUqjs');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /*Repeat the picture if the page is too long*/
+
+    text-align: center;
+    background-color: #0d0d0d;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Alien title card */
+.alien-title {
+    font-family: 'Georgia', serif; 
+    color: white;
+    font-size: 64px;
+    letter-spacing: 20px;
+    opacity: 0; 
+    
+    animation: alienFadeIn 6s steps(6) forwards;
+}
+
+/* Keyframes for gradual fade-in */
+@keyframes alienFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+p {
+    width: 80%;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+/* Styling the Years */
+.year {
+    color: #33ff33; /* Bright green for years */
+    font-weight: bold;
+}
+
+/* Styling the Ordered List */
+ol {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none; /* Removes default numbering */
+    counter-reset: section;
+}
+
+ol > li::before {
+    display: none; /* Hides the custom counter-based numbering */
+}
+
+/* Centering the Button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-grow: 1;
+}
+
+.back-button {
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Ensuring Footer Alignment */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}

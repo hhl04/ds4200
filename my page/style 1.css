@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    align-items: center; /* Horizontally center all content */
+    justify-content: center; /* Vertically center content */
+}
+
+p{
+    width: 800px; 
+    margin: 0 auto;
+}
+#main {
+    background-color: aquamarine;
+    width: 500px; 
+    margin: 0 auto;
+
+    border: 5px solid black; 
+    padding: 20px 20px 20px 20px
+}
+
+#AlienRomulus {
+    display: block;
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Georgia:ital@0;1&display=swap'); 
+
+/*Alien title card */
+.alien-title {
+    font-family: 'Georgia', serif; 
+    color: white;
+    font-size: 64px;
+    letter-spacing: 20px;
+    opacity: 0; 
+    
+    animation: alienFadeIn 6s steps(6) forwards;
+}
+
+/* Keyframes for gradual fade-in */
+@keyframes alienFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Styling for the email footer*/
+footer {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer a {
+    color: #33ff33;
+    text-decoration: none;
+    font-weight: bold;
+}

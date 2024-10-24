@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+
+    <link rel="stylesheet" href="style 1.css">
+
+</head>
+
+<body>
+    <h1 style = 'color: cornflowerblue; font-size: 48px;'>My Favorite Movie Franchise</h1>
+    <h2 class="alien-title">ALIEN</h2>
+
+
+    <button id = 'navigateButton'>
+        Picture Credit: r/CineShots
+    </button>
+
+    <script>
+        const navigateButton = document.getElementById('navigateButton')
+        navigateButton.addEventListener('click', function(){ 
+        window.location.href = 'https://www.reddit.com/r/CineShots/comments/1fqvvks/alien_romulus_2024/'
+        }
+    )
+    </script>
+
+    <p id = 'main'>
+        With the latest installment in the franchise, <i>Alien: Romulus</i>, being 
+        a box office hit gathering $350 million worldwide, this cosmos-spanning 
+        franchise has received more attention from old and new fans alike. I dedicate this website
+        to briefly list and explain all the main events of the <i>Alien</i> mytho,
+        spanning five centuries across different movies, novels and video games.
+        <br>
+        <br>
+
+        My first exposure to this franchise was in 2017, when I watched <i>Prometheus</i> and
+        <i>Alien: Covenant</i>, both were not the best works to exist in this franchise. <br>
+        Compared to previous entries, these two movies were experimental and trying to add more myths to 
+        the popular-but-familiar <i>Xenomorph</i> mythos. The newly added myths were controversial
+        but logical, but what drew the most criticism was the poorly written and executed scripts
+        of these movies. I love the newly added myths, but am not fond of the poor screenplay.
+
+    </p> 
+    <!-- set id to 'main', then we can spefically modify this in css -->
+
+    <img id="AlienRomulus"
+    src="https://ichef.bbci.co.uk/images/ic/1376xn/p0jjdrhx.jpg.webp" 
+    alt="Alien Romulus" width = 600>
+
+    <footer>
+        <p>Contact me at: <a href="mailto:lehoangtuonghuy2004@gmail.com">lehoangtuonghuy2004@gmail.com</a></p>
+    </footer>
+    
+    <button id="secondPageButton">Next</button>
+
+    <script>
+        const secondPageButton = document.getElementById('secondPageButton');
+        secondPageButton.addEventListener('click', function () {
+            window.location.href = 'my page 2.html';
+        });
+    </script>
+
+
+</body>
+</html>
